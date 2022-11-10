@@ -1,4 +1,4 @@
-# Point of Sale
+# Cashbox
 
 a simple pos accepting customer payments.
 
