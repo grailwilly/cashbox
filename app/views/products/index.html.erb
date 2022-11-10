@@ -1,1 +1,19 @@
 <h1>Products</h1>
+
+<div>
+  <% @products.each do |product| %>
+    <p>Code:<%= product.code %></p>
+    <p>Product Name:<%= product.product %></p>
+    <p>Price:<%= product.price %></p>
+    <%= link_to "View", 
+      controller: "products", 
+      action: "show", 
+      id: product.id 
+    %>
+  <% end %>
+  
+</div>
+
+<div>
+  <%= link_to "New Product", products_new_path %>
+</div>
